@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components/style.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -75,7 +75,7 @@
     ></script>
     <script type="text/javascript">
     $(document).ready(function () {
-       $("#main").load("addProject.html",function(){
+       $("#main").load("components/addProject.html",function(){
            $("#addreset").load("addreset.html");
            $("#search-box").load("searchbox.html");
            $("#priority").on("change",function(){
@@ -84,7 +84,7 @@
        });
 
        $("#project").on("click",function(){
-            $("#main").load("addProject.html", function(){
+            $("#main").load("components/addProject.html", function(){
                 $("#addreset").load("addreset.html");
                 $("#search-box").load("searchbox.html");
                 $("#priority").on("change",function(){
@@ -94,14 +94,14 @@
        });
 
        $("#user").on("click",function(){
-            $("#main").load("addUser.html", function(){
+            $("#main").load("components/addUser.html", function(){
                 $("#addreset").load("addreset.html");
                 $("#search-box").load("searchbox.html");
             });
        });
        
        $("#task").on("click",function(){
-            $("#main").load("addTask.html", function(){
+            $("#main").load("components/addTask.html", function(){
                 $("#priority").on("change",function(){
                     $("#priority-value").html($(this).val());
                 });
@@ -110,7 +110,7 @@
        }); 
 
        $("#view-task").on("click",function(){
-            $("#main").load("viewTask.html", function(){
+            $("#main").load("components/viewTask.html", function(){
                 $("#addreset").load("addreset.html");
                 $("#search-box").load("searchbox.html");
             });
