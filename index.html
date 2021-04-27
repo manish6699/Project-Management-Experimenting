@@ -76,8 +76,8 @@
     <script type="text/javascript">
     $(document).ready(function () {
        $("#main").load("components/addProject.html",function(){
-           $("#addreset").load("addreset.html");
-           $("#search-box").load("searchbox.html");
+           $("#addreset").load("components/addreset.html");
+           $("#search-box").load("components/searchbox.html");
            $("#priority").on("change",function(){
                $("#priority-value").html($(this).val());
            });
@@ -85,8 +85,8 @@
 
        $("#project").on("click",function(){
             $("#main").load("components/addProject.html", function(){
-                $("#addreset").load("addreset.html");
-                $("#search-box").load("searchbox.html");
+                $("#addreset").load("components/addreset.html");
+                $("#search-box").load("components/searchbox.html");
                 $("#priority").on("change",function(){
                     $("#priority-value").html($(this).val());
                 });
@@ -95,8 +95,8 @@
 
        $("#user").on("click",function(){
             $("#main").load("components/addUser.html", function(){
-                $("#addreset").load("addreset.html");
-                $("#search-box").load("searchbox.html");
+                $("#addreset").load("components/addreset.html");
+                $("#search-box").load("components/searchbox.html");
             });
        });
        
@@ -105,14 +105,14 @@
                 $("#priority").on("change",function(){
                     $("#priority-value").html($(this).val());
                 });
-                $("#addreset").load("addreset.html");
+                $("#addreset").load("components/addreset.html");
             });
        }); 
 
        $("#view-task").on("click",function(){
             $("#main").load("components/viewTask.html", function(){
-                $("#addreset").load("addreset.html");
-                $("#search-box").load("searchbox.html");
+                $("#addreset").load("components/addreset.html");
+                $("#search-box").load("components/searchbox.html");
             });
        }); 
     });
