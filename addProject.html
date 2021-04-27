@@ -1,0 +1,104 @@
+<div id="wrapper"></div>
+<div class="container" id="project-main">
+  <form>
+    <div class="form-group row">
+      <div class="col-3">
+        <label for="name">Project</label>
+      </div>
+      <div class="col-9">
+        <input
+          type="text"
+          pattern="[a-zA-Z]+"
+          class="form-control"
+          id="name"
+          placeholder="Enter the Project Name"
+        />
+      </div>
+    </div>
+    <!-- Default switch -->
+    <div class="form-group row">
+      <div class="col-3"></div>
+      <div class="col-9">
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="switch1"
+            name="example"
+          />
+          <label class="custom-control-label" for="switch1"
+            >Set Start and End Date</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-3">
+        <label for="formControlRange">Priority</label>
+      </div>
+      <div class="col-8">
+        <input
+          type="range"
+          value="0"
+          class="form-control-range"
+          id="priority"
+        />
+      </div>
+      <div class="col-1">
+        <p id="priority-value"></p>
+      </div>
+    </div>
+    
+    <div class="form-group row">
+      <div class="col-3">
+        <label for="manager">Manager</label>
+      </div>
+      <div class="col-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Select Manager for Project"
+        />
+      </div>
+      <div class="col-3">
+        <button class="btn btn-danger">Search</button>
+      </div>
+    </div>
+    <div id="addreset"></div>
+  </form>
+  <hr />
+  <div id="search-box"></div>
+  <div class="row mt-3">
+    <div class="col-sm-3">
+      <lable>Sort By:</lable>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-primary mb-2" id="sort-start-date">
+        Start Date
+      </button>
+    </div>
+    <div class="col-sm-2 mb-2">
+      <button type="button" class="btn btn-primary" id="sort-end-date">
+        End Date
+      </button>
+    </div>
+    <div class="col-sm-2 mb-2">
+      <button type="button" class="btn btn-primary" id="sort-priority">
+        Priority
+      </button>
+    </div>
+    <div class="col-sm-2 mb-2">
+      <button type="button" class="btn btn-primary" id="sort-status">
+        Status
+      </button>
+    </div>
+  </div>
+  <div class="row" id="projects-info"></div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+
